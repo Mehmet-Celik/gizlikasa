@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical"
+        tools:layout_marginLeft="15dp"
+        tools:layout_marginTop="15dp">
+
+        <TextView
+            android:id="@+id/txtsecuritySoru"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_marginStart="15dp"
+            android:ems="10"
+            android:inputType="textCapSentences"
+            android:textColor="@android:color/white"
+            android:textColorLink="@android:color/white" />
+
+        <EditText
+            android:id="@+id/editSecurityCevap"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:ems="10"
+            android:hint="Güvenlik Sorusunu Cevaplayınız..."
+            android:inputType="textCapSentences"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white"
+            android:textColorLink="@android:color/white" />
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/background4"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="25px"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="54dp"
+        android:paddingLeft="30dp">
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="287dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <EditText
+                android:id="@+id/kayit_ad"
+                android:layout_width="287dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="72dp"
+                android:ems="10"
+                android:hint="Kullanıcı Adı"
+                android:inputType="textPersonName"
+                android:textColor="@android:color/background_light"
+                android:textColorHint="@android:color/background_light"
+                android:textColorLink="@android:color/background_light"
+
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/kayit_email"
+                android:layout_width="287dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="E-mail"
+                android:inputType="textEmailAddress"
+                android:textColor="@android:color/background_light"
+                android:textColorHint="@android:color/background_light"
+                android:textColorLink="@android:color/background_light"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/kayit_sifre"
+                android:layout_width="287dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Şifre"
+                android:inputType="textPassword"
+                android:textColor="@android:color/background_light"
+                android:textColorHint="@android:color/background_light"
+                android:textColorLink="@android:color/background_light"
+                android:textSize="30sp"
+
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="130dp"
+                android:orientation="horizontal"
+                tools:layout_editor_absoluteX="8dp"
+                tools:layout_editor_absoluteY="554dp">
+
+                <Button
+                    android:id="@+id/vazgec"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30px"
+                    android:layout_marginRight="30px"
+                    android:layout_marginTop="50dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/holo_blue_light"
+                    android:onClick="KayitIslem"
+                    android:text="Vazgec"
+                    android:textColor="@android:color/white" />
+
+                <Button
+                    android:id="@+id/kayit_tamamla"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30px"
+                    android:layout_marginRight="30px"
+                    android:layout_marginTop="50dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/holo_blue_light"
+                    android:onClick="KayitIslem"
+                    android:text="Kayıt Tamam"
+                    android:textColor="@android:color/white" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
